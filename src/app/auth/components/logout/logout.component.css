@@ -1,0 +1,17 @@
+
+.logout{
+    background-color: rgb(206, 56, 236);
+}
+.alert p{
+    font-size: 1.3rem;
+}
+.logoutbtn{
+    background-color: rgb(206, 56, 236);
+    color: white;
+    border: 2px solid white;
+    height: 36px;
+}
+.logoutbtn:hover{
+    background-color: white;
+    color: rgb(206, 56, 236);
+}
