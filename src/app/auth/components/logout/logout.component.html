@@ -1,0 +1,18 @@
+<div class="container-fluid" style="padding-top: 100px;">
+    <div class="container logout rounded">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="../../../assets/images/speaker.png" style="width: 100%; height: auto;" alt="">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12 text-white alert" style="margin-top: 50px;">
+                <h4>Hey Wait!...</h4>
+                <p>Are you sure you want to leave this page without confirming your order?</p>
+
+                <div class="col" style="margin-top: 50px;">
+                    <button class="rounded logoutbtn mx-2" (click)="logout()">Yes, maybe later</button>
+                    <button class="rounded logoutbtn" routerLink="/adminLanding">No, I want to stay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

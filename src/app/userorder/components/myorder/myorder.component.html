@@ -1,0 +1,46 @@
+<div class=" d-flex justify-content-start " style="flex-wrap: wrap;">
+
+  <div class="col py-2 mt-5 d-flex" *ngFor="let ordered of orderedItems">
+    <div class="card card2 " style="width: 25rem;">
+      <div class="row">
+        <div class="col-sm">
+          <img class="card-img i2" src="data:image/png;base64,{{ordered?.productImage}}" alt="Card image cap">
+        </div>
+        <div class="col">
+        </div>
+      </div>
+      <div class="card-body">
+
+        <table class="table">
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Product Total</td>
+              <td></td>
+              <td>{{ordered?.total_price}}</td>
+            </tr>
+            <tr>
+              <td>Discount</td>
+              <td></td>
+              <td>%10<span class="text-muted">(100/-)</span></td>
+            </tr>
+            <tr>
+              <td>Delivery fee</td>
+              <td></td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <th class="t2">Total</th>
+              <td></td>
+              <th class="t2">120</th>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!-- <button type="button" class="btn btn-primary  btn1"> CANCEL ORDER</button> -->
+      <button type="button" class="btn btn-primary  btn1" (click)="deletemyorder(ordered?.order_id)"> CANCEL ORDER</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="text-center" style="padding-top: 4rem;">
+  <h1 class="all-Categories">All Categories</h1>
+</div>
+
+<div class="container-fluid mt-2">
+    <div class=" d-flex mx-auto input-group mb-3">
+      <input type="text" class="form-control input-sm" placeholder="Search something..."
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn search" type="button" id="button-addon2">Search</button>
+    </div>
+</div>
+
+<div class="container">
+  <button class="btn btn-warning my-4 text-white d-md-inline-block d-block" routerLink="/adminLanding/category/addcategory">
+    Add New Category
+  </button>
+  <table class="table border bg-light" style="border: 1px solid gray;">
+    <thead>
+      <tr>
+        <th scope="col"><small class="catheading">Category Name</small></th>
+        <th scope="col"><small class="catheading">Description</small></th>
+        <th scope="col"><small class="catheading">Image</small></th>
+        <th scope="col"><small class="catheading">Controls</small></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of categoryData">
+        <td>{{item.name}}</td>
+        <td>{{item.description}}</td>
+        <td><img style="width:50px;height:50px;" src="data:image/png;base64,{{item.image}}"></td>
+        <td><i class="bi bi-pencil-square" style="font-size: 20px;"></i></td>
+        <td><i class="bi bi-trash-fill" style="font-size: 20px;" (click)="deleteCat(item.id)"></i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <div class="bg-light" style="margin-top: -16px;height: 2rem;opacity: 0.6;">
+    <button class="btn btn-light border mr-auto"><small>&lt;&lt; Previous</small></button>
+    <small class="mx-auto">Page/10</small>
+    <button class="btn btn-light border ml-auto"><small>Next &gt;&gt;</small></button>
+  </div>
+</div>

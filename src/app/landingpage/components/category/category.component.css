@@ -1,0 +1,31 @@
+.pro{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fee4e4;
+    border-radius: 0;
+    font-weight: bold;
+    color: #58ad71cb;
+}
+.pro:hover{
+    background-color: #ff8080;
+    color: #fff;
+}
+.card{
+    max-width: 300px;
+    margin-top: 50px;
+}
+
+.outer-container {
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    white-space: nowrap;
+  }
+  
+  .category {
+    display: inline-block;
+    width: 160px; /* Adjust this width as needed */
+    margin-right: 15px; /* Adjust this margin as needed */
+  }

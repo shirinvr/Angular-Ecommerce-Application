@@ -1,0 +1,47 @@
+<div class="text-center" style="padding-top: 4rem;">
+    <h1 class="all-products">All Orders</h1>
+</div>
+
+
+<div class="container">
+    <table class="table border bg-light" style="border: 1px solid gray;">
+        <thead>
+            <tr>
+                <th scope="col" class="orderheading"> Product</th>
+                <th scope="col" class="orderheading"> No of items</th>
+                <th scope="col" class="orderheading">total price</th>
+                <th scope="col" class="orderheading">User</th>
+                <th scope="col" class="orderheading">Order Status</th>
+                <th scope="col" class="orderheading">Accept</th>
+                <th scope="col" class="orderheading">Cancel</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr  *ngFor="let item of data">
+
+                <td><img class="productimg" src="data:image/png;base64,{{item.productImage}}">{{item.productName}}</td>
+                <td>{{item.quantity}} </td>
+                <td>{{item.total_price}}</td>
+                <td (click)="userorder()">{{item.username}}<br>{{item.mail}}</td>
+                <td>
+                    <select class="form-select" aria-label="Default select example" style="width: 135px;">
+                        <option selected>Pending</option>
+                        <option value="1">Complete</option>
+                    </select>
+                </td>
+                <td><i class="bi bi-check-circle" style="font-size: 20px;"></i></td>
+                <td><i class="bi bi-trash-fill" style="font-size: 20px;" (click)="deleteorder(item.order_id)"></i></td>
+            </tr>
+            <tr>
+        </tbody>
+    </table>
+
+</div>
+<div class="container">
+    <div class="bg-light" style="margin-top: -16px;height: 2rem;opacity: 0.6;">
+      <button class="btn btn-light border mr-auto"><small>&lt;&lt; Previous</small></button>
+      <small class="mx-auto">Page/10</small>
+      <button class="btn btn-light border ml-auto"><small>Next &gt;&gt;</small></button>
+    </div>
+  </div>

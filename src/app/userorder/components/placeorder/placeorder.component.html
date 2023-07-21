@@ -1,0 +1,87 @@
+<div class="container mt-3" *ngIf="product">
+  <div class="row justify-content-center">
+    <div class="col col-lg-6 imagecol1 align-self-center">
+      <img src="data:image/png;base64,{{product?.image}}" title="productimage" alt="productimage" width="350px" height="330px">
+
+    </div>
+
+    <div class="col col-lg-6 imagecol2 mt-3">
+
+
+      <div class="text-danger h5">
+        <span class="text-secondary text-decoration-line-through h6 ">{{product?.price}} </span>&nbsp;
+        <span class="text-white bg-danger">-50%</span>
+        <img class="revimg ms-5" src="../../../assets/images/reviews.jpg" title="review" alt="review">
+      </div>
+
+
+      <div class="btn btn-success mt-3 ms-5  pobtn" [routerLink]="['/userOrder/shipping',product?.id]">
+        <i class="bi bi-cart text-black"></i>
+        Place Order
+      </div>
+
+      <div class="h6 mt-3">Delivery</div>
+
+      <div class="fs font-weight-light">Free standard shipping on orders
+        <span class="h6">over Rs 500</span> before tax,plus free returns
+      </div>
+      <table class="table my-3">
+        <thead>
+          <tr>
+            <td scope="col" class="text-secondary fs">TYPE</td>
+            <td scope="col" class="text-secondary fs">HOW LONG</td>
+            <td scope="col" class="text-secondary fs">HOW MUCH</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tabfontsiz">Standard delivery</td>
+            <td class="tabfontsiz">1-4 business days</td>
+            <td class="tabfontsiz">$ 4.50</td>
+          </tr>
+          <tr>
+            <td class="tabfontsiz">Express delivery</td>
+            <td class="tabfontsiz">1 business day</td>
+            <td class="tabfontsiz">$ 10.00</td>
+          </tr>
+          <tr>
+            <td class="tabfontsiz">Pick up in store</td>
+            <td class="tabfontsiz">1-3 business days</td>
+            <td class="tabfontsiz">Free</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="return-policy">
+        <h6 class="h6">Return</h6>
+        <p>You have <span class="h6">60 days</span> to return the item(s) using any of the following methods: </p>
+        <ul>
+          <li>Free store return</li>
+          <li>Free returns via USPS Dropoff Service.</li>
+        </ul>
+        <hr class="text-secondary">
+      </div>
+
+      <h6>Share:
+        <i class="bi bi-facebook icon-f ms-3 rounded"></i>
+        <i class="bi bi-twitter icon-f ms-3 rounded"></i>
+        <i class="bi bi-pinterest icon-f ms-3 rounded"></i>
+      </h6>
+
+
+      <div class="row my-3">
+        <div class="col-md-3 mx-0">
+          <img class="img" src="../../assets/images/visa.jpg" title="visaimg" alt="visaimg">
+        </div>
+        <div class="col-md-3 mx-1">
+          <img class="img" src="../../assets/images/master-card.jpg" title="mastercardimg" alt="mastercardimg">
+        </div>
+        <div class="col-md-3 mx-1">
+          <img class="img" src="../../assets/images/pay-pal.jpg" title="paypalimg" alt="paypalimg">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

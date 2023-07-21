@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <h4 class="btn btn-success my-3" style="margin-left: 6.1rem;">Product Category</h4>
+    <div class="outer-container">
+        <div class="container">
+            <div class="container" style="height: 300px; overflow-x: scroll;">
+                <div class="row">
+                    <div class="col-md-2 category" *ngFor="let category of categoryData">
+                        <div class="shadow">
+                            <div class="card">
+                                <img src="data:image/png;base64,{{category.image}}" alt="" class="img-fluid" [ngStyle]="{'height': '136px'}">
+                                <button class="btn mx-4 pro">{{category.name}}</button>
+                                <!-- <button class="btn mx-4 pro" (click)="onCategoryButtonClick(category.id)">{{category.name}}</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+</div>

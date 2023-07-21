@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+  .login-form {
+    width: 696px;
+    height: 550px;
+    background-color: #78b689;
+    border-radius: 20px;
+  }
+
+  .frameimg {
+    position: relative;
+    top: 169px;
+    left: 74px;
+    width: 189px;
+    height: 183px;
+  }
+
+  .field {
+    width: 300px;
+    height: 50px;
+    background-color: #897c62;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    font-family: Itim;
+  }
+
+  .field::placeholder {
+    color: white;
+    font-size: 16px;
+    font-family: Itim;
+  }
+
+  .field:hover {
+    border: 4px solid white;
+    color: aliceblue;
+    font-family: Itim;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Itim';
+  }
+
+
+  p {
+    margin-top: 10px;
+    margin-left: 180px;
+    font-size: 14px;
+    color: rgb(242, 242, 245);
+    font-family: Itim;
+  }
+
+
+
+  .input-container {
+    position: relative;
+  }
+
+  .field {
+    padding-left: 50px;
+  }
+
+  .placeholder-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+
+  .placeholder-iconp {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+  }
+
+  .vertical-line {
+    position: absolute;
+    top: 50%;
+    right: 236px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 70%;
+    background-color: rgb(244, 239, 239);
+  }
+
+  /* Media Queries */
+  @media (max-width: 576px) {
+    .ftable {
+      margin-top: 10px;
+    }
+    .frameimg {
+      top: 10px !important;
+      left: 80px !important;
+      width: 50% !important;
+      height: auto;
+    }
+
+    .input-container {
+      display: flex;
+      align-items: center;
+    }
+    .lines{
+      display: inline-flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 10px;
+    }
+
+    .line {
+      width: 130px;
+      height: 2px;
+      background-color: white;
+      margin-top: 10px;
+    }
+
+    .icons {
+      width: 15%;
+    }
+  
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+
+    .login-form {
+      width: 100%;
+      max-width: 580px;
+      height: auto;
+      background-color: #78b689;
+      border-radius: 20px;
+      position: relative;
+      margin: 0 auto;
+      top: unset;
+      left: unset;
+    }
+
+    .frameimg {
+      top: 110px;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .ftable {
+      position: relative;
+      top: 10px;
+    }
+
+    .field {
+      width: 100%;
+      max-width: 300px;
+    }
+    .lines{
+      margin-top: 10px;
+    }
+
+    .line {
+      width: 130px;
+      height: 2px;
+      background-color: white;
+      margin-top: 10px;
+    }
+
+    .icons {
+      margin-bottom: 10px;
+      width: 55%;
+      margin-top: 5px;
+    }
+
+    .linkp,
+    .link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .container {
+      padding: 10px;
+    }
+
+    .login-form {
+      width: 100%;
+      max-width: 580px;
+      height: auto;
+      background-color: #78b689;
+      border-radius: 20px;
+      position: relative;
+      margin: 0 auto;
+      top: unset;
+      left: unset;
+    }
+
+    .frameimg {
+      top: 110px;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .field {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .line {
+      width: 130px;
+      height: 2px;
+      background-color: white;
+      margin-top: 10px;
+    }
+
+    .icons {
+      margin-bottom: 10px;
+      width: 21%;
+    }
+
+    .linkp,
+    .link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 1440px) {
+    .container {
+      padding: 10px;
+    }
+
+    .login-form {
+      width: 100%;
+      max-width: 580px;
+      height: auto;
+      background-color: #78b689;
+      border-radius: 20px;
+      position: relative;
+      margin: 0 auto;
+      top: unset;
+      left: unset;
+    }
+
+    .frameimg {
+      top: 110px;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .field {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .line {
+      width: 90px;
+      height: 2px;
+      background-color: white;
+      margin-top: 10px;
+    }
+
+    .icons {
+      margin-bottom: 10px;
+      width: 21%;
+    }
+
+    .linkp,
+    .link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 2560px) {
+    .container {
+      padding: 10px;
+    }
+
+    .login-form {
+      width: 100%;
+      max-width: 580px;
+      height: auto;
+      background-color: #78b689;
+      border-radius: 20px;
+      position: relative;
+      margin: 0 auto;
+      top: unset;
+      left: unset;
+    }
+
+    .frameimg {
+      top: 110px;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .field {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .line {
+      width: 90px;
+      height: 2px;
+      background-color: white;
+      margin-top: 10px;
+    }
+
+    .icons {
+      margin-bottom: 10px;
+      width: 21%;
+    }
+
+    .linkp,
+    .link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
