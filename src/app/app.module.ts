@@ -6,10 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminhomeModule } from './adminhome/adminhome.module';
 import { LandingpageModule } from './landingpage/landingpage.module';
-import { UserhomeModule } from './userhome/userhome.module';
-import { UserprofileModule } from './userprofile/userprofile.module';
-import { SharedModule } from './shared/shared.module';
-import { UserorderModule } from './userorder/userorder.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { TokenInterceptor } from './core/interceptors/token.interceptor';
 

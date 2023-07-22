@@ -1,269 +1,128 @@
 
 
 .signup h2 {
-    text-align: center;
-    padding: 20px;
-    font-size: 32px;
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
 }
 
 .imgb {
 
 
-    width: 395px;
-    height: 449px;
-    position: relative;
-    left: -150px;
-    top: 20px;
+  width: 395px;
+  height: 449px;
+  position: relative;
+  left: -150px;
+  top: 20px;
 }
 
 
 .container.signup {
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 form table {
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 form table td {
 
-    padding: 5px;
+  padding: 5px;
 }
 
 .field {
-    border-radius: 10px;
-    background-color: #fafdff;
-    border: 1px solid #f0f1f2;
-    font-size: 12px;
-    height: 25px;
+  border-radius: 10px;
+  background-color: #fafdff;
+  border: 1px solid #f0f1f2;
+  font-size: 12px;
+  height: 25px;
 
-    padding: 3px;
+  padding: 3px;
 
 }
 
 .field1 {
-    width: 150px;
-    height: 70px;
-    border-radius: 10px;
-    background-color: #fafdff;
-    border: 1px solid #f0f1f2;
-    font-size: 12px;
+  width: 150px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #fafdff;
+  border: 1px solid #f0f1f2;
+  font-size: 12px;
 }
 
 .btn {
-    width: 140px;
-    height: 50px;
-    background-color: #f8a366;
-    margin-top: 0;
-    border-radius: 20px;
-    color: white;
+  width: 140px;
+  height: 50px;
+  background-color: #f8a366;
+  margin-top: 0;
+  border-radius: 20px;
+  color: white;
 }
 
 .check {
-    margin-top: -32px;
-    margin-left: 20px;
+  margin-top: -32px;
+  margin-left: 20px;
 }
 
 .link {
-    color: #f8a366;
+  color: #f8a366;
 }
 
 input.ng-invalid.ng-touched {
-    border: rgb(245, 11, 11) 3px solid;
+  border: rgb(245, 11, 11) 3px solid;
 }
 
 @media (max-width: 576px) {
-    .signupimage {
-        display: none;
-    }
-    .signup {
-        width: 700px;
-        height: 499px;
-        border: 2px black solid;
-        border-radius: 20px;
-        margin-left: 0;
-    }
+  .signupimage {
+      display: none;
+  }
+  .signup {
+      width: 700px;
+      height: 499px;
+      border: 2px black solid;
+      border-radius: 20px;
+      margin-left: 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .signup {
-        width: 790px;
-        height: 499px;
-        border: 2px black solid;
-        border-radius: 20px;
-        margin: 50px 0 0 50px;
-    }
+  .signup {
+      width: 790px;
+      height: 499px;
+      border: 2px black solid;
+      border-radius: 20px;
+      margin: 50px 0 0 50px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .signup {
-        width: 790px;
-        height: 499px;
-        border: 2px black solid;
-        border-radius: 20px;
-        margin: 50px 0 0 50px;
-    }
+  .signup {
+      width: 790px;
+      height: 499px;
+      border: 2px black solid;
+      border-radius: 20px;
+      margin: 50px 0 0 50px;
+  }
 }
 
 @media (max-width: 1440px) {
-    .signup {
-        width: 790px;
-        height: 499px;
-        border: 2px black solid;
-        border-radius: 20px;
-        margin: 50px 0 0 50px;
-    }
+  .signup {
+      width: 790px;
+      height: 499px;
+      border: 2px black solid;
+      border-radius: 20px;
+      margin: 50px 0 0 50px;
+  }
 }
 
 @media (max-width: 2560px) {
-    .signup {
-        width: 790px;
-        height: 499px;
-        border: 2px black solid;
-        border-radius: 20px;
-        margin: 50px 0 0 50px;
-    }
+  .signup {
+      width: 790px;
+      height: 499px;
+      border: 2px black solid;
+      border-radius: 20px;
+      margin: 50px 0 0 50px;
+  }
 }
-
-
-/* .signup {
-    width: 790px;
-    height: 499px;
-    border: 2px black solid;
-    border-radius: 20px;
-    position: absolute;
-    top: 144px;
-    left: 413px;
-  }
-  
-  .signup h2 {
-    text-align: center;
-    padding: 20px;
-    font-size: 32px;
-  }
-  
-  .imgb {
-    width: 100%;
-    max-width: 395px;
-    height: auto;
-    position: relative;
-    top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .container.signup {
-    margin-bottom: 20px;
-  }
-  
-  form table {
-    margin-bottom: 20px;
-  }
-  
-  form table td {
-    padding: 5px;
-  }
-  
-  .field {
-    width: 100%;
-    max-width: 150px;
-    height: 25px;
-    border-radius: 10px;
-    background-color: #fafdff;
-    border: 1px solid #f0f1f2;
-    font-size: 12px;
-    padding: 3px;
-  }
-  
-  .field1 {
-    width: 100%;
-    max-width: 150px;
-    height: 70px;
-    border-radius: 10px;
-    background-color: #fafdff;
-    border: 1px solid #f0f1f2;
-    font-size: 12px;
-  }
-  
-  .btn {
-    width: 50px;
-    height: 50px;
-    background-color: #f8a366;
-    margin-top: 25px;
-    border-radius: 20px;
-  }
-  
-  .check {
-    margin-top: -32px;
-    margin-left: 20px;
-  }
-  
-  .link {
-    color: #f8a366;
-  }
-  
-  input.ng-invalid.ng-touched {
-    border: rgb(245, 11, 11) 3px solid;
-  }
-  
-  @media (max-width: 576px) {
-    .signup {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 20px;
-      top: unset;
-      left: unset;
-      position: relative;
-    }
-  
-    .imgb {
-      top: 0;
-    }
-  
-    form table td {
-      padding: 3px;
-    }
-  
-    .field,
-    .field1 {
-      max-width: 100%;
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .signup {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 20px;
-      top: unset;
-      left: unset;
-      position: relative;
-      margin: 0 auto;
-    }
-  
-    .imgb {
-      top: 0;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    .signup {
-      width: 90%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 20px;
-      top: unset;
-      left: unset;
-      position: relative;
-      margin: 0 auto;
-    }
-  
-    .imgb {
-      top: 0;
-    }
-  } */
